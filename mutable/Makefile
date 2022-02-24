@@ -6,3 +6,9 @@ dev:
 
 prod:
 	@cd env-prod && rm -rf .terraform && terraform init && terraform apply -auto-approve
+
+destroy-dev:
+	@cd env-dev && terraform destroy -auto-approve
+
+destroy-prod:
+	@cd env-prod && terraform destroy -auto-approve
