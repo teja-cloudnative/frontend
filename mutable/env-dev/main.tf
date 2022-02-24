@@ -1,5 +1,5 @@
 module "ec2"{
-  source = "https://github.com/teja-cloudnative/terraform-mutable-ec2.git"
+  source = "git::https://github.com/teja-cloudnative/terraform-mutable-ec2"
   SERVER_COUNT = var.SERVER_COUNT
 }
 
