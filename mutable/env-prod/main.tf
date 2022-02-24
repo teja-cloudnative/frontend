@@ -4,6 +4,8 @@ module "ec2"{
   SPOT_INSTANCE_COUNT = var.SPOT_INSTANCE_COUNT
   OD_INSTANCE_TYPE    = var.OD_INSTANCE_TYPE
   SPOT_INSTANCE_TYPE  = var.SPOT_INSTANCE_TYPE
+  COMPONENT           = var.COMPONENT
+  ENV                 = var.ENV
 }
 
 #module "alb" {
