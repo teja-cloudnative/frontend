@@ -8,5 +8,5 @@ module "ec2" {
   COMPONENT           = var.COMPONENT
 }
 #module "alb" {
-#  source = "git:github.com/teja-cloudnative/terraform-mutable-alb"
+#  source = "git::github.com/teja-cloudnative/terraform-mutable-alb"
 #}
