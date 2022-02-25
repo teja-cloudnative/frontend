@@ -6,7 +6,7 @@ module "ec2"{
   SPOT_INSTANCE_TYPE  = var.SPOT_INSTANCE_TYPE
   COMPONENT           = var.COMPONENT
   ENV                 = var.ENV
-}
+
 
 #module "alb" {
 #  source = "git:github.com/teja-cloudnative/terraform-mutable-alb"
