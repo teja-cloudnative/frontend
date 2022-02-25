@@ -1,4 +1,4 @@
-module "ec2"{
+module "ec2" {
   source              = "git:https://github.com/teja-cloudnative/terraform-mutable-ec2"
   OD_INSTANCE_COUNT   = var.OD_INSTANCE_COUNT
   SPOT_INSTANCE_COUNT = var.SPOT_INSTANCE_COUNT
@@ -6,9 +6,7 @@ module "ec2"{
   SPOT_INSTANCE_TYPE  = var.SPOT_INSTANCE_TYPE
   ENV                 = var.ENV
   COMPONENT           = var.COMPONENT
-
-
-
+}
 #module "alb" {
 #  source = "git:github.com/teja-cloudnative/terraform-mutable-alb"
 #}
