@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
     bucket = "terraform-teja"
-    key    = "mutable/frontend/prod/terraform.tfstate"
+    key    = "mutable/frontend/dev/terraform.tfstate"
     region = "us-east-1"
   }
 }
