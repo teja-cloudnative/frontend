@@ -9,10 +9,10 @@ module "ec2" {
   ALB_ATTACH_TO       = "frontend"
 }
 
-module "tags" {
-  count       = length(module.ec2.ALL_TAGS)
-  source      = "git::https://github.com/raghudevopsb62/terraform-tags"
-  TAG_NAME    = lookup(element(module.ec2.ALL_TAGS, count.index), "name")
-  TAG_VALUE   = lookup(element(module.ec2.ALL_TAGS, count.index), "value")
-  RESOURCE_ID = module.ec2.ALL_TAG_IDS
-}
+#module "tags" {
+#  count       = length(module.ec2.ALL_TAGS)
+#  source      = "git::https://github.com/raghudevopsb62/terraform-tags"
+#  TAG_NAME    = lookup(element(module.ec2.ALL_TAGS, count.index), "name")
+#  TAG_VALUE   = lookup(element(module.ec2.ALL_TAGS, count.index), "value")
+#  RESOURCE_ID = module.ec2.ALL_TAG_IDS
+#}
