@@ -1,5 +1,5 @@
 module "ec2" {
-  source              = "git::https://github.com/raghudevopsb62/terraform-mutable-ec2"
+  source              = "git::https://github.com/teja-cloudnative/terraform-mutable-ec2"
   SPOT_INSTANCE_COUNT = var.SPOT_INSTANCE_COUNT
   OD_INSTANCE_COUNT   = var.OD_INSTANCE_COUNT
   SPOT_INSTANCE_TYPE  = var.SPOT_INSTANCE_TYPE
@@ -11,7 +11,7 @@ module "ec2" {
 
 #module "tags" {
 #  count       = length(module.ec2.ALL_TAGS)
-#  source      = "git::https://github.com/raghudevopsb62/terraform-tags"
+#  source      = "git::https://github.com/teja-cloudnative/terraform-tags"
 #  TAG_NAME    = lookup(element(module.ec2.ALL_TAGS, count.index), "name")
 #  TAG_VALUE   = lookup(element(module.ec2.ALL_TAGS, count.index), "value")
 #  RESOURCE_ID = module.ec2.ALL_TAG_IDS
