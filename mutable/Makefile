@@ -7,8 +7,8 @@ dev dev-apply:
 prod prod-apply:
 	@cd env-prod && rm -rf .terraform && terraform init && terraform apply -auto-approve
 
-destroy-dev:
+dev-destroy:
 	@cd env-dev && rm -rf .terraform && terraform init && terraform destroy -auto-approve
 
-destroy-prod:
+prod-destroy:
 	@cd env-prod && rm -rf .terraform && terraform init && terraform destroy -auto-approve
