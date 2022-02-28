@@ -4,4 +4,3 @@ variable "OD_INSTANCE_TYPE" {}
 variable "SPOT_INSTANCE_TYPE" {}
 variable "COMPONENT" {}
 variable "ENV" {}
-
