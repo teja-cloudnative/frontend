@@ -7,6 +7,7 @@ module "ec2" {
   ENV                 = var.ENV
   COMPONENT           = var.COMPONENT
   ALB_ATTACH_TO       = "frontend"
+  PORT                = var.PORT
 }
 
 module "tags" {
