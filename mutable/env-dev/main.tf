@@ -8,6 +8,7 @@ module "ec2" {
   COMPONENT           = var.COMPONENT
   ALB_ATTACH_TO       = "frontend"
   PORT                = var.PORT
+  TRIGGER             = var.TRIGGER
 }
 
 module "tags" {
