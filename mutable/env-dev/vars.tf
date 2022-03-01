@@ -5,3 +5,6 @@ variable "SPOT_INSTANCE_TYPE" {}
 variable "COMPONENT" {}
 variable "ENV" {}
 variable "PORT" {}
+variable "TRIGGER" {
+  default = "no"
+}
